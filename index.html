@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Responsive Portfolio website</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="menuToggle"></div>
+        <ul class="nav">
+            <li class="active"><a href="#home">home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <div class="content">
+            <h2> Suzan</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam totam assumenda sunt maxime quisquam nostrum similique enim minus, recusandae repellendus ipsum autem! Labore non magni nihil earum mollitia porro laboriosam?</p>
+            <a href="#" class="btn">Contact Me</a>
+            
+        </div>
+        <img src="girl-001.png" class="girl">
+    </section>
+    <section id="services">
+        <div class="sectext">
+            <h2>What I Am Great At</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maiores eum iste voluptas expedita repudiandae qui tenetur magni aliquid! Dignissimos commodi aliquid ad odit quibusdam amet eos saepe magnam praesentium.</p>
+        </div>
+        <div class="content">
+            <div class="servicesBx">
+                <img src="incon1.png.png">
+                <h3>Web Designing</h3>
+            </div>
+            <div class="servicesBx">
+                <img src="incon2.png.png">
+                <h3>Web devopment</h3>
+            </div>
+            <div class="servicesBx">
+                <img src="incon3.png.png">
+                <h3>Android Apps</h3>
+            </div>
+            <div class="servicesBx">
+                <img src="incon4.png.png">
+                <h3>Video Editing</h3>
+            </div> 
+        </div>
+        <div class="center">
+            <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
+    <section id="portfolio">
+        <div class="sectext">
+            <h2>My Masterpiece Collection</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maiores eum iste voluptas expedita repudiandae qui tenetur magni aliquid! Dignissimos commodi aliquid ad odit quibusdam amet eos saepe magnam praesentium.</p>
+        </div>
+        <div class="content">
+            <div class="imgBx">
+                <img src="img1.jgp.jpeg">
+            </div>
+            <div class="imgBx">
+                <img src="img2.jgp.webp">
+            </div>
+            <div class="imgBx">
+                <img src="img3.jgp.jpeg">
+            </div>
+            <div class="imgBx">
+                <img src="img4.jgp.jpeg">
+            </div>
+            <div class="imgBx">
+                <img src="img5.jgp.jpeg">
+            </div>
+            <div class="imgBx">
+                <img src="img6.jgp.jpeg">
+            </div>
+        </div>
+        <div class="center">
+            <a href="#" class="btn">View More</a>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="sectext">
+            <h2>Ways To Contact Me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maiores eum iste voluptas expedita repudiandae qui tenetur magni aliquid! Dignissimos commodi aliquid ad odit quibusdam amet eos saepe magnam praesentium.</p>
+        </div>
+        <div class="content">
+            <a href="#">
+                <ion-icon name="mail-outline"></ion-icon>
+                Yanokijo6@gmail.com
+            </a>
+            <a href="#">
+                <ion-icon name="call-outline"></ion-icon>
+                +123 000 000 000
+            </a>
+            <a href="#">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                whatsapp
+            </a>
+        </div>
+        <p class="copyrights">copyrights @ 2023 <a href="#">Online Tutorials</a>. All Right Reservad</p>
+    </section>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>    
+    let list = document.querySelectorAll('.nav li');
+        function active(){
+            list.forEach((i) =>
+            i.classList.remove('active'));
+            this.classlist.add('active');
+        }
+        list.forEach((i) =>
+        i.addEventListener('click',active));
+        
+        
+        let menuToggle = document.querySelector('.menuToggle');
+        let header = document.querySelector('header');
+        menuToggle.onclick = function(){
+            header.classList.toggle('active');
+        }
+
+    </script>
+</body>
+</html>
